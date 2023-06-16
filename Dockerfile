@@ -25,6 +25,6 @@ RUN  yum -y install curl hostname httpd authconfig nss-tools && \
 
 VOLUME ["/etc/dirsrv","/var/lib/dirsrv","/var/log/dirsrv"]
 
-EXPOSE 389 9830
+EXPOSE 389
 
 CMD ["/install-and-run-389ds.sh"]
